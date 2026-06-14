@@ -1,5 +1,7 @@
 # 旅ログ（TABI LOG）
 
+> A simple, server-less travel journal web app — diary, map pins, a "conquest" map of visited prefectures/countries, and stats. Built with React + Vite + Leaflet. No API keys, no backend.
+
 シンプルな旅の記録アプリです。人気の旅ログアプリの定番機能をひとつにまとめました。
 
 ## 機能
@@ -32,3 +34,9 @@ npm run preview  # ビルド結果の確認
 - react-leaflet / Leaflet（地図表示）
 - topojson-client + world-atlas / dataofjapan の地形データ（`public/data/`）
 - 外部 API キー不要（地図タイルは OpenStreetMap）
+
+## ライセンス
+
+[MIT License](./LICENSE) © 2026 TAKOMESHI2323
+
+地図タイルは [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors、地形データは [world-atlas](https://github.com/topojson/world-atlas) および [dataofjapan/land](https://github.com/dataofjapan/land) を利用しています。
