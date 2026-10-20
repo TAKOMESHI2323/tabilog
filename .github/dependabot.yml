@@ -1,0 +1,27 @@
+# Dependabot 設定（HOSHILABO / 2026-10-20 追加）
+# - バージョン更新: 月1回（日本時間 9:00）。minor/patch は1本のPRにまとめる
+# - セキュリティ更新: GitHub の Settings > Code security で
+#   「Dependabot alerts」「Dependabot security updates」をONにすると、
+#   脆弱性が公開され次第、この設定に沿って修正PRが自動で作られる
+version: 2
+updates:
+  - package-ecosystem: "npm"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 5
+    groups:
+      npm-minor-patch:
+        update-types: ["minor", "patch"]
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+      time: "09:00"
+      timezone: "Asia/Tokyo"
+    open-pull-requests-limit: 5
+    groups:
+      githubactions-minor-patch:
+        update-types: ["minor", "patch"]
