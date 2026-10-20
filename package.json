@@ -10,14 +10,14 @@
   },
   "dependencies": {
     "leaflet": "^1.9.4",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
     "react-leaflet": "^5.0.0",
     "topojson-client": "^3.1.0"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^6.0.2",
-    "vite": "^8.0.16",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.4",
     "world-atlas": "^2.0.2"
   }
 }
